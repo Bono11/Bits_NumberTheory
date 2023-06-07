@@ -1,3 +1,7 @@
+### Code Example 1 <a name="code-example-1"></a>
+
+// Your code example 1 goes here
+
 #include <bits/stdc++.h>
 using namespace std;
 void printbinary(int n)
