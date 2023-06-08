@@ -9,6 +9,14 @@ find out the one number using O(n) time and O(1) space.
 
 Logic:XORing all elements, each even number element will XOR another same element to zero,
 we will be left with one number which does not have an matching pair.
+
+XOR is associative in nature
+
+To swap numbers a,b
+
+a=a^b;
+b=b^a;
+a=a^b;
 */
 void printbinary(int n)
 {
@@ -41,5 +49,12 @@ int main()
     int ans=0;
     for(auto x: v)
     ans^=x;
-    cout<<"Number with odd count: "<<ans<<endl;
+    cout<<"Number with odd count: "<<ans<<endl<<endl;
+    int a=11, b=9;
+    cout<<"a="<<a<<" "<<"b="<<b<<endl;
+    a=a^b;
+    b=b^a;
+    a=a^b;
+    cout<<"After swap,\n";
+    cout<<"a="<<a<<" "<<"b="<<b<<endl;
 }
